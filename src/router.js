@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './components/pages/Home.vue'
-import ItemList from './components/pages/ItemList.vue'
-import ItemDetail from './components/pages/ItemDetail.vue'
+import List from './components/pages/item/List.vue'
+import Detail from './components/pages/item/Detail.vue'
 
 const routes = [
   {
@@ -11,19 +11,19 @@ const routes = [
   },
   {
     path: '/item/list',
-    name: 'ItemList',
-    component: ItemList,
+    name: 'List',
+    component: List,
   },
   {
     path: '/item/detail',
-    name: 'ItemDetail',
-    component: ItemDetail,
+    name: 'Detail',
+    component: Detail,
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 })
 
 export default router
